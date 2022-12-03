@@ -22,11 +22,23 @@ a {
     text-decoration: none;
 }
 
-/* nav section start  */
+.section-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2{
+    color: #004d7c;
+    font-size: 40px;
+    font-weight: 600;
+}
+.section-title span{
+    color: #FF9D34;
+}
+
 .nav-div {
     z-index: 2;
     background-color: #004d7c;
-    /* color: #fff; */
+ 
 }
 .logo{
     color: #FF9D34;
@@ -152,134 +164,24 @@ a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* plan section style end  */
+/* ---------Plane End----------- */
 
-/*----start-about----*/
-
-
-/*--about-time-line--*/
-.about-time-line {
-    padding: 0;
-    list-style: none;
-    position: relative;
-    width: 60%;
-    margin: 6em auto 15em;
+/* ---------About Start--------- */
+.about-area{
+    padding: 100px 0;
 }
-
-.about-time-line li {
-    display: inline;
-    min-height: 300px;
+.about-text h3{
+    font-weight: bold;
+    font-size: 30px;
 }
-
-.about-time-line:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: #F1F1F1;
-    left: 49%;
-    margin-left: -10px;
+.about-text{
+    padding-top: 75px;
+    padding-right: 150px;
 }
-
-.about-time-line>li:nth-child(odd) .cbp_tmtime span:last-child {
-    color: #6cbfee;
+.about-img img{
+    width: 100%;
 }
-
-.about-time-line>li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
-    color: #3594cb;
-}
-
-.about-time-line>li .cbp_tmtime span {
-    display: block;
-    text-align: right;
-}
-
-.about-time-line>li .cbp_tmicon,
-.cbp_tmicon1,
-.cbp_tmicon2,
-.cbp_tmicon3,
-.cbp_tmicon2,
-.cbp_tmicon4 {
-    width: 170px;
-    height: 170px;
-    speak: none;
-    font-size: 1.4em;
-    line-height: 40px;
-    position: absolute;
-    color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 8px #F1F1F1;
-    -webkit-box-shadow: 0 0 0 8px #F1F1F1;
-    -moz-box-shadow: 0 0 0 8px #F1F1F1;
-    -o-box-shadow: 0 0 0 8px #F1F1F1;
-    text-align: center;
-    left: 41%;
-    top: 0;
-    margin: 0 0 0 -25px;
-    display: block;
-}
-
-.cbp_tmicon1 {
-    left: 41%;
-    top: 27%;
-}
-
-.cbp_tmicon2 {
-    left: 41%;
-    top: 52%;
-}
-
-.cbp_tmicon3 {
-    left: 41%;
-    top: 77%;
-}
-
-.cbp_tmicon4 {
-    left: 41%;
-    top: 100%;
-    
-}
-
-
-.about-time-line>li .cbp_tmlabel {
-    margin: 0 0 0px -8%;
-    color: #fff;
-    padding: 1em 0em 0em 0;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
-    position: relative;
-    border-radius: 5px;
-    width: 40%;
-    text-align: right;
-    min-height: 250px;
-}
-
-.about-time-line>li .cbp_tmlabel1 {
-    margin: 0 0 15px 64%;
-    text-align: left;
-}
-
-.about-time-line>li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: #6cbfee;
-}
-
-.cbp_tmlabel h2 {
-    color: #222222;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.93em;
-}
-
-.cbp_tmlabel p {
-    color: #969AA3;
-    line-height: 1.6em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.72em;
-    margin-top: 0.8em;
-}
+/* ---------About End----------- */
 
 /* h */
 
@@ -306,6 +208,10 @@ a {
     width: 100%;
     transition: 1s ease;
     cursor: pointer;
+}
+.booking-img img{
+    width: 100%;
+    height: auto;
 }
 
 .des-scle {
