@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* nav section start  */
+.nav-div {
+    z-index: 2;
+    background-color: #004d7c;
+    /* color: #fff; */
+}
+.logo{
+    color: #FF9D34;
+}
+.search{
+    color: #FF9D34;
+}
+.fa-user {
+    font-size: 20px;
+    background: #FF9D34;
+    padding: 10px 12px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* nav section end  */
+
+
+/* banner section style start  */
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #50a3d3;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 100px;
+}
+
+.btn-dream {
+    border: none;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    transition: all 1s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    margin-left: 10px;
+}
+
+.btn-effect {
+    background: #FF9D34;
+    border: none;
+    z-index: 1;
+}
+
+.btn-effect:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #014073;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+}
+
+.btn-effect:hover {
+    color: #fff;
+}
+
+.btn-effect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-effect:active {
+    top: 2px;
+}
+
+/* banner section style end  */
+
+/* plan section style start  */
+#plan {
+    background-color: #fafafa;
+}
+
+.plan-icon {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    border: #1f252a 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.plan-p{
+    color: #969AA3;
+}
+
+.plan-hover {
+    background-color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.plan-hover:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* plan section style end  */
+
+/*----start-about----*/
+
+
+/*--about-time-line--*/
+.about-time-line {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 60%;
+    margin: 6em auto 15em;
+}
+
+.about-time-line li {
+    display: inline;
+    min-height: 300px;
+}
+
+.about-time-line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #F1F1F1;
+    left: 49%;
+    margin-left: -10px;
+}
+
+.about-time-line>li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
+}
+
+.about-time-line>li .cbp_tmtime span:last-child {
+    font-size: 2.9em;
+    color: #3594cb;
+}
+
+.about-time-line>li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+
+.about-time-line>li .cbp_tmicon,
+.cbp_tmicon1,
+.cbp_tmicon2,
+.cbp_tmicon3,
+.cbp_tmicon2,
+.cbp_tmicon4 {
+    width: 170px;
+    height: 170px;
+    speak: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #F1F1F1;
+    -webkit-box-shadow: 0 0 0 8px #F1F1F1;
+    -moz-box-shadow: 0 0 0 8px #F1F1F1;
+    -o-box-shadow: 0 0 0 8px #F1F1F1;
+    text-align: center;
+    left: 41%;
+    top: 0;
+    margin: 0 0 0 -25px;
+    display: block;
+}
+
+.cbp_tmicon1 {
+    left: 41%;
+    top: 27%;
+}
+
+.cbp_tmicon2 {
+    left: 41%;
+    top: 52%;
+}
+
+.cbp_tmicon3 {
+    left: 41%;
+    top: 77%;
+}
+
+.cbp_tmicon4 {
+    left: 41%;
+    top: 100%;
+    
+}
+
+
+.about-time-line>li .cbp_tmlabel {
+    margin: 0 0 0px -8%;
+    color: #fff;
+    padding: 1em 0em 0em 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+    width: 40%;
+    text-align: right;
+    min-height: 250px;
+}
+
+.about-time-line>li .cbp_tmlabel1 {
+    margin: 0 0 15px 64%;
+    text-align: left;
+}
+
+.about-time-line>li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: #6cbfee;
+}
+
+.cbp_tmlabel h2 {
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.93em;
+}
+
+.cbp_tmlabel p {
+    color: #969AA3;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.72em;
+    margin-top: 0.8em;
+}
+
+/* h */
+
+.destination-header h6 {
+    font-size: 20px;
+    color: #004d7c;
+}
+
+.destination-header h1 {
+    font-weight: bold;
+}
+
+.des-cl {
+    color: #FF9D34;
+}
+
+.des-dt p {
+    margin-bottom: 0;
+    color: #969AA3;
+}
+
+.des-img {
+    height: 250px;
+    width: 100%;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.des-scle {
+    width: 100%;
+    overflow: hidden;
+}
+
+.des-scle:last-child {
+    margin-right: 0px;
+}
+
+.des-scle:hover img {
+    transform: scale(1.2);
+}
+
+.card-title {
+    color: #004d7c;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.card-t:hover h5 {
+    color: #FF9D34;
+}
+
+.card-text {
+    color: #969AA3;
+}
+
+.book-now {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.btn-lay {
+    background: #FF9D34;
+    border: none;
+    z-index: 1;
+}
+
+.btn-lay:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #014073;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+}
+
+.btn-lay:hover {
+    color: #fff;
+}
+
+.btn-lay:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-lay:active {
+    top: 2px;
+}
+
+.review i {
+    color: #FF9D34;
+}
